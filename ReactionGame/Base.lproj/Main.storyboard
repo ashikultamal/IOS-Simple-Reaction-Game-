@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Get Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jps-4G-OIe">
+                                <rect key="frame" x="20" y="28" width="280" height="21"/>
+                                <color key="backgroundColor" red="0.97425525856008111" green="1" blue="0.85445271895078601" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zo-I5-9Wl">
+                                <rect key="frame" x="20" y="79" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50289460732686586" blue="0.29475014003156275" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.98823535439999999" green="0.97254908080000002" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNG-Hs-QB5">
+                                <rect key="frame" x="20" y="135" width="280" height="21"/>
+                                <color key="backgroundColor" red="0.90636594508142498" green="1" blue="0.36432802793477248" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ml-Hb-bOT">
+                                <rect key="frame" x="20" y="79" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50289460730000002" blue="0.29475013999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.98823535439999999" green="0.97254908080000002" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCR-wI-pQX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Ml-Hb-bOT" firstAttribute="top" secondItem="jps-4G-OIe" secondAttribute="bottom" constant="30" id="0ak-VY-t8J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mNG-Hs-QB5" secondAttribute="trailing" id="Bti-Et-rYi"/>
+                            <constraint firstItem="jps-4G-OIe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MZC-tn-bT6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Ml-Hb-bOT" secondAttribute="trailing" id="N5f-dp-Lhc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1Ml-Hb-bOT" secondAttribute="leading" id="NJB-Pz-GIS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mNG-Hs-QB5" secondAttribute="leading" id="Ryx-eQ-2yQ"/>
+                            <constraint firstItem="mNG-Hs-QB5" firstAttribute="top" secondItem="1Ml-Hb-bOT" secondAttribute="bottom" constant="26" id="jla-Io-5la"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jps-4G-OIe" secondAttribute="trailing" id="uCp-Gx-US3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jps-4G-OIe" secondAttribute="leading" id="v4I-pY-1br"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="getReadyLabel" destination="jps-4G-OIe" id="ydH-Qz-SOu"/>
+                        <outlet property="timerLabel" destination="mNG-Hs-QB5" id="7br-Uy-bA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>
